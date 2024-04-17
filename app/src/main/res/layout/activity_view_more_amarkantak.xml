@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#826349"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:layout_margin="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/amarkantak2" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:layout_margin="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/amarkantak3" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:layout_margin="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/amarkantak4" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" About Amarkantak"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amarkantak5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textBelowImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Amarkantak, nestled in the eastern part of Madhya Pradesh, India, is a serene town of great religious and natural significance. Known as the King of Pilgrimages, it is revered as the source of the Narmada, Son,and Johila rivers, making it a sacred site for Hindus. The Narmada Udgam, where the Narmada River emergesfrom the Amarkantak plateau, is a particularly revered spot.\n\n Apart from its spiritual importance, Amarkantak is surrounded by lush forests and is a haven forbiodiversity enthusiasts. The town is situated in the Maikal mountain range, providing stunning panoramicviews of the surrounding valleys and hills.\n\n Amarkantak also houses various temples like the Narmada Temple and Shri Yantra Mandir, drawing devotees from far and wide. The town is an excellent base for treks into the nearby forests and a starting point for exploring the picturesque surroundings. With its blend of natural beauty and spiritual sanctity, Amarkantak offers a unique and enriching experience for all who visit."
+                    android:textSize="16sp"
+                    android:padding="8dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Things To Do"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amarkantak"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="How To Reach"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#c5ad99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:id="@+id/textAmarkantak7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amarkantak7"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Back"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
