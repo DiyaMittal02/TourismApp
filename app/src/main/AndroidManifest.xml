@@ -68,6 +68,13 @@
         <activity
             android:name=".ViewMoreActivityYaganti"
             android:exported="false" />
+        <activity
+            android:name=".ViewMoreActivitySangti"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMoreActivityTawang"
+            android:exported="false" />
+
 
         <!-- Add more activities as needed -->
 

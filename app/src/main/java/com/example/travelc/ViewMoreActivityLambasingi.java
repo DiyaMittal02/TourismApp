@@ -7,7 +7,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
-public class ViewMoreActivityAmarkantak extends AppCompatActivity {
+public class ViewMoreActivityLambasingi extends AppCompatActivity {
     private WebView webView;
     private Button backButton;
 
@@ -31,15 +31,29 @@ public class ViewMoreActivityAmarkantak extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
         // Set OnClickListener for the "Back" button
-        backButton.setOnClickListener(view -> {
-            // Check if the WebView can go back
-            if (webView.canGoBack()) {
-                // Go back in WebView's history
-                webView.goBack();
-            } else {
-                // If WebView cannot go back, finish the activity
-                finish();
-            }
-        });
+        backButton.setOnClickListener(view -> goBackOrFinish());
+
+    }
+
+    // Override the onBackPressed() method to handle back button press
+    @Override
+    public void onBackPressed() {
+        if (!goBackOrFinish()) {
+            super.onBackPressed();
+        }
+    }
+
+    // Method to handle back navigation or finishing the activity
+    private boolean goBackOrFinish() {
+        // Check if the WebView can go back
+        if (webView.canGoBack()) {
+            // Go back in WebView's history
+            webView.goBack();
+            return true; // Back navigation successful
+        } else {
+            // If WebView cannot go back, finish the activity
+            finish();
+            return false; // Activity finished
+        }
     }
 }

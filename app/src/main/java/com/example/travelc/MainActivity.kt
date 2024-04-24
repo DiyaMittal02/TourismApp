@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ActivityViewMore::class.java)
             startActivity(intent)
             finish() // Optional: Finish MainActivity after starting ActivityViewMore
-        }, 10000) // 3000 milliseconds = 3 seconds
+        }, 20000) // 3000 milliseconds = 3 seconds
 
         val loginButton = findViewById<Button>(R.id.loginButton)
         loginButton.setOnClickListener {

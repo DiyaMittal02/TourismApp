@@ -14,10 +14,6 @@ class ViewMoreActivityF : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        // Set OnClickListener for the "Back" option
-        binding.buttonBack.setOnClickListener {
-            // Finish the current activity to go back to the previous one
-            finish()
-        }
+
     }
 }

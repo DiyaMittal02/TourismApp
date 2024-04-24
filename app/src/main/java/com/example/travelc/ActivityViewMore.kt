@@ -49,6 +49,18 @@ class ActivityViewMore : AppCompatActivity() {
             val intent = Intent(this, ViewMoreActivityLambasingi::class.java)
             startActivity(intent)
         }
+        val buttonViewMoreActivitySangti = findViewById<Button>(R.id.button_view_more_sangti)
+        buttonViewMoreActivitySangti.setOnClickListener {
+            val intent = Intent(this, ViewMoreActivityLambasingi::class.java)
+            startActivity(intent)
+        }
+        val buttonViewMoreActivityTawang = findViewById<Button>(R.id.button_view_more_tawang)
+        buttonViewMoreActivitySangti.setOnClickListener {
+            val intent = Intent(this, ViewMoreActivityLambasingi::class.java)
+            startActivity(intent)
+        }
+
+
 
         // Add onClickListeners for other buttons as needed
     }
