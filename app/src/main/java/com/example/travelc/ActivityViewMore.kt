@@ -60,6 +60,18 @@ class ActivityViewMore : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val buttonViewMoreActivityNamsai = findViewById<Button>(R.id.button_view_more_namsai)
+        buttonViewMoreActivityNamsai.setOnClickListener{
+            val intent = Intent(this, ViewMoreActivityNamsai::class.java)
+            startActivity(intent)
+        }
+
+//        val buttonViewMoreActivityMajuli = findViewById<Button>(R.id.button_view_more)
+//        buttonViewMoreActivityMajuli.setOnClickListener {
+//            val intent = Intent(this, ViewMoreActivityMajuli::class.java)
+//            startActivity(intent)
+//        }
+
 
 
         // Add onClickListeners for other buttons as needed
